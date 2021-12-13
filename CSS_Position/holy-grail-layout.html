@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      border-bottom: 1px solid gray;
+      padding-left: 20px;
+    }
+
+    footer {
+      border-top: 1px solid gray;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+    }
+
+    .content nav {
+      border-right: 1px solid gray;
+    }
+
+    .content aside {
+      border-left: 1px solid gray;
+    }
+
+    nav, aside {
+      flex-basis: 150px;
+      flex-shrink: 0;
+    }
+    
+    .content main {
+      /* flex-basis: 300px; */
+      /* flex-shrink: 1; */
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>생활코딩</h1>
+    </header>
+    <section class="content">
+      <nav>
+        <ul>
+          <li>html</li>
+          <li>css</li>
+          <li>javascript</li>
+        </ul>
+      </nav>
+      <main>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime amet consectetur earum iure possimus, ut quae facilis cum natus ratione quibusdam qui provident, neque cumque illo ea, sed doloremque beatae.</main>
+      <aside>광고</aside>
+    </section>
+    <footer>
+      <a href="/CSS_Position/holy-grail-layout.html">홈페이지</a>
+    </footer>
+  </div>
+</body>
+</html>

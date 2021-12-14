@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style>
+		.container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		header {
+			border-bottom: 1px solid gray;
+			padding-left: 20px;
+		}
+
+		footer {
+			border-top: 1px solid gray;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.content {
+			display: flex;
+		}
+
+		.content nav {
+			border-right: 1px solid gray;
+		}
+
+		.content aside {
+			border-left: 1px solid gray;
+		}
+
+		nav, aside {
+			flex-basis: 150px;
+			flex-shrink: 0;
+		}
+
+		main {
+			padding: 10px;
+		}
+
+		@media (max-width: 500px) {
+			.content {
+				flex-direction: column;
+			}
+
+			.content nav, .content aside {
+				border: none;
+				flex-basis: auto;
+			}
+
+			main {
+				order: 0;
+			}
+
+			nav {
+				order: 1;
+			}
+
+			aside {
+				/* order: 2; */
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>생활코딩</h1>
+		</header>
+		<section class="content">
+			<nav>
+				<ul>
+					<li>html</li>
+					<li>css</li>
+					<li>javascript</li>
+				</ul>
+			</nav>
+			<main>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, nesciunt expedita fuga incidunt sed facere a non sunt nemo doloremque qui omnis cum animi deleniti excepturi dolorum, et consequuntur reiciendis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus sapiente dolorum, temporibus iste voluptates fugiat fugit eligendi ea deserunt ipsa perspiciatis nobis quisquam. Quos ab voluptatum delectus? Exercitationem, ipsa id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga provident nihil, aspernatur quidem maxime cumque excepturi quia sed quae. Quod quo esse beatae sequi vero harum minima deleniti molestiae accusamus.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, nesciunt expedita fuga incidunt sed facere a non sunt nemo doloremque qui omnis cum animi deleniti excepturi dolorum, et consequuntur reiciendis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus sapiente dolorum, temporibus iste voluptates fugiat fugit eligendi ea deserunt ipsa perspiciatis nobis quisquam. Quos ab voluptatum delectus? Exercitationem, ipsa id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga provident nihil, aspernatur quidem maxime cumque excepturi quia sed quae. Quod quo esse beatae sequi vero harum minima deleniti molestiae accusamus.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, nesciunt expedita fuga incidunt sed facere a non sunt nemo doloremque qui omnis cum animi deleniti excepturi dolorum, et consequuntur reiciendis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus sapiente dolorum, temporibus iste voluptates fugiat fugit eligendi ea deserunt ipsa perspiciatis nobis quisquam. Quos ab voluptatum delectus? Exercitationem, ipsa id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga provident nihil, aspernatur quidem maxime cumque excepturi quia sed quae. Quod quo esse beatae sequi vero harum minima deleniti molestiae accusamus.</main>
+			<aside>AD</aside>
+		</section>
+		<footer><a href="/CSS_Position/holy-grail-layout.html">Home</a></footer>
+	</div>
+</body>
+</html>
